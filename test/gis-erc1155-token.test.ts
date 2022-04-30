@@ -21,21 +21,21 @@ describe("GisERC1155Token", () => {
     it("should correct mint", async () => {
         const mintAmount = 10
         const firstId = 1
-        await nftToken1155.mint(owner.address, mintAmount)
+        await nftToken1155["mint(address,uint256)"](owner.address, mintAmount)
         expect(await nftToken1155.balanceOf(owner.address, firstId)).to.eq(mintAmount)
     })
 
     it("check url for tokenId", async () => {
         const mintAmount = 10
         const firstId = 1
-        await nftToken1155.mint(owner.address, mintAmount)
+        await nftToken1155["mint(address,uint256)"](owner.address, mintAmount)
         expect(await nftToken1155.uri(firstId)).to.eq(tokenBaseUrl + firstId)
     })
 
     it("should correct mintBatch", async () => {
         const amounts = [1,2,10]
         const ids = [1,2,3]
-        await nftToken1155.mintBatch(owner.address, amounts)
+        await nftToken1155["mintBatch(address,uint256[])"](owner.address, amounts)
         expect(await nftToken1155.balanceOf(owner.address, ids[0])).to.eq(amounts[0])
         expect(await nftToken1155.balanceOf(owner.address, ids[1])).to.eq(amounts[1])
         expect(await nftToken1155.balanceOf(owner.address, ids[2])).to.eq(amounts[2])
