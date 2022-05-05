@@ -1,9 +1,9 @@
 # GIS NFT Token Project
 Smart-contract of ERC-721, ERC-1155 tokens 
 
-Rinkeby Etherscan URL ERC721: https://rinkeby.etherscan.io/address/0x12d7947c39045e9923d1062141d83E35afb282F3#code
+Rinkeby Etherscan URL ERC721: https://rinkeby.etherscan.io/address/0xc9f3DD7CEaf5Aa3947dAB6e6d593C1394C6321c4#code
 
-Rinkeby Etherscan URL ERC1155: https://rinkeby.etherscan.io/address/0x474C9333eaf747846ba436c293C45daBF93062BE#code
+Rinkeby Etherscan URL ERC1155: https://rinkeby.etherscan.io/address/0x632F55C52C6f3d89fC7dFE8a4ce57bc7969D04a5#code
 
 Custom tasks:
 ```shell
